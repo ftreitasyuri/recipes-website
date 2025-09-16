@@ -1,29 +1,21 @@
 {% include "recipes/partials/head.html" %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
+    <!-- Add header from header.html -->
+    {% include "recipes/partials/header.html" %}
+
+    <!-- Add search-form from search.html -->
+    {% include "recipes/partials/search.html" %}
 
 
-            <h1>
-                <a class="main-logo" href="/">
-                    <i class="fa-solid fa-utensils main-logo-icon"></i>
-                    <span class="main-logo-text">Receitas</span>
-                </a>
+    <!-- Main content container -->
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            
 
-            </h1>
         </div>
-    </header>
-
-    <div class="search-container">
-        <div class="container">
-            <form action="" class="search-form">
-                <input type="text" class="search-input" placeholder="Digite para Pesquisar">
-                <button type="submit" class="search-button"> <i class="fas fa-search"></i></button>
-            </form>
-        </div>
-
-    </div>
+        
+    </main>
 
 </body>
 
