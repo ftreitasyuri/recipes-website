@@ -44,6 +44,7 @@
     --spacing-gutter-large: 4rem;
 }
 
+
 * {
     padding: 0;
     margin: 0;
@@ -58,6 +59,7 @@ body {
     font-size: 1.6rem;
     font-family: var(--font-primary);
     background: var(--color-gray-1);
+    color: var(--color-dark-text);
 }
 
 h1,
@@ -148,6 +150,7 @@ h6 {
 .main-content{
     /* background: blue; */
     padding-top: 0;
+    
 }
 
 .main-content-list{
@@ -156,5 +159,114 @@ h6 {
     gap: var(--spacing-gutter-large);
 }
 
+/* RECIPE CARD */
+.recipe{ 
+    background: var(--color-white);
+    box-shadow: -5px 5px 10px rgb(0, 0, 0, .3);
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+    border-radius: 10px;
+}
+.recipe img {
+    max-width: 100%;
+    background: var(--color-white);
+
+}
+
+
+.recipe-list-item{
+    max-width: 64rem;
+}
+
+.recipe-list-item:hover{
+    transform: scale(1.01);
+    box-shadow: -8px 5px 18px rgb(0, 0, 0, .3);
+
+}
+
+.recipe-title-container{
+    padding: var(--spacing-gutter-medium);
+    /* padding-bottom: calc(var(--spacing-gutter-medium) / 2); */
+    padding-bottom: 2rem;
+}
+/* END RECIPE CARD */
+
+/* AUTHOR DATA */
+.recipe-author{
+    padding: 0 var(--spacing-gutter-medium);
+
+    /* background-color: red; */
+}
+
+.recipe-author a{
+    color: var(--color-primary);
+    transition: all 300ms ease-in-out;
+    text-decoration: none;
+
+}
+
+.recipe-author a :hover{
+    color: var(--color-primary-dark);
+}
+
+.recipe-content{
+    padding: var(--spacing-gutter-medium);
+    padding-top: 2rem;
+    
+
+}
+
+.recipe-author-item{
+    color: var(--color-gray-4);
+    margin-right: 1rem;
+}
+/* END AUTHOR DATA */
+
+/* RECIPE GOAL AND SERVINGS */
+
+.recipe-goal-container{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: var(--spacing-gutter-medium);
+    background: var(--color-gray-1);
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.recipe-goal{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.recipe-preparation{}
+
+.recipe-goal-title{
+    font-size: 1.6rem;
+}
+.recipe-goal-text{}
+
+.recipe-servings{
+
+}
+/* END RECIPE GOAL AND SERVINGS */
+
+/* RECIPE FOOTER */
+.recipe-footer a {
+            background: var(--color-primary-dark);
+            display: block;
+            color: var(--color-white);
+            text-decoration: none;
+            text-align: center;
+            padding: 5rem var(--spacing-gutter-medium);
+            transition: all 300ms ease-in-out;
+        }
+
+.recipe-footer a:hover {
+    filter: brightness(2);
+}
+/* END RECIPE FOOTER */
 
 /* END MAIN CONTENT */
