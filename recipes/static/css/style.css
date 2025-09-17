@@ -241,16 +241,14 @@ h6 {
     text-align: center;
 }
 
-.recipe-preparation{}
+/* .recipe-preparation{} */
 
 .recipe-goal-title{
     font-size: 1.6rem;
 }
-.recipe-goal-text{}
+/* .recipe-goal-text{}
 
-.recipe-servings{
-
-}
+.recipe-servings{} */
 /* END RECIPE GOAL AND SERVINGS */
 
 /* RECIPE FOOTER */
@@ -270,3 +268,26 @@ h6 {
 /* END RECIPE FOOTER */
 
 /* END MAIN CONTENT */
+
+/* FOOTER */
+.main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+    padding: var(--spacing-gutter-large);
+
+}
+
+.main-footer a{
+    color: var(--color-white);    
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.main-footer a:hover{
+    filter: brightness(.8);
+}
+/* END FOOTER */

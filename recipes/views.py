@@ -6,7 +6,7 @@ from django.http import HttpResponse
 #     return HttpResponse('HOME 1')
 
 def home(request):
-    numero = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    numero = [1, 2, 3, 4]
     return render(request, 'recipes/pages/home.html', context={
         'name': 'Yuri Dev',
         'qtd': numero
