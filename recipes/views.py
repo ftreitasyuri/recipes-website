@@ -11,3 +11,14 @@ def home(request):
         'name': 'Yuri Dev',
         'qtd': numero
     })
+
+def recipe(request, id):
+    
+    # numero = [1, 2, 3, 4]
+    numero = [id]
+    # id = numero[2]
+    return render(request, 'recipes/pages/recipe-view.html', context={
+        'name': 'Yuri Dev',
+        'qtd': numero,
+        # 'recipe': id
+    })

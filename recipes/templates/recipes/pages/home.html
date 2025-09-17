@@ -1,32 +1,18 @@
-{% include "recipes/partials/head.html" %}
+{% extends '../base_templates/global/base.html' %}
 
-<body>
-    <!-- Add header from header.html -->
-    {% include "recipes/partials/header.html" %}
+{% block title %}Home | {% endblock title %}
 
-    <!-- Add search-form from search.html -->
-    {% include "recipes/partials/search.html" %}
+{% block content %}
 
+{% comment %} {% include 'global/partials/messages.html' %} {% endcomment %}
 
-    <!-- Main content container -->
-    <main class="main-content-container">
-
-
-
-
-        <div class="container main-content main-content-list ">
-            {% for i in qtd %}
-             
-            {% include 'recipes/partials/recipe.html' %}
-
-            {% endfor %}
-        </div>
-
-
-    </main>
-
-    {% include 'recipes/partials/footer.html' %}
-
-</body>
-
-</html>
+<div class="main-content main-content-list container">
+{% for recipe in qtd %}
+    {% include 'recipes/partials/recipe.html' %}
+{% empty %}
+    <div class="center m-y">
+        <h1>No recipes found here 🥲</h1>
+    </div>
+{% endfor %}
+</div>
+{% endblock content %}

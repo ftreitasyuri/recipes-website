@@ -71,9 +71,9 @@ h6 {
     font-family: var(--font-headings);
 }
 
-.main-content-container{
+/* .main-content-container{
     background: red;
-}
+} */
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -293,3 +293,18 @@ h6 {
     filter: brightness(.8);
 }
 /* END FOOTER */
+
+
+/* RECIPE VIEW */
+.main-content-detail {
+    max-width: 840px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-content-detail:hover{
+}
+/* END RECIPE VIEW */
