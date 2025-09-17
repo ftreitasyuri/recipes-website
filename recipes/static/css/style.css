@@ -71,11 +71,13 @@ h6 {
     font-family: var(--font-headings);
 }
 
+.main-content-container{
+    background: red;
+}
 .container {
-    max-width: 144rem;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: var(--spacing-gutter-large);
-    /* background-color: red; */
+    padding: var(--spacing-gutter-medium);
 }
 
 .main-header-container {
@@ -175,7 +177,7 @@ h6 {
 
 
 .recipe-list-item{
-    max-width: 64rem;
+    max-width: 640px;
 }
 
 .recipe-list-item:hover{
